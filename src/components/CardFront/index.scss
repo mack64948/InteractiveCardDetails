@@ -1,0 +1,74 @@
+$font-size: 18px;
+$linear-gradient-start: hsl(249, 99%, 64%);
+$linear-gradient-end: hsl(278, 94%, 30%);
+$error-red: hsl(0, 100%, 66%);
+$white: hsl(0, 0%, 100%);
+$light-grayish-violet: hsl(270, 3%, 87%);
+$dark-grayish-violet: hsl(279, 6%, 55%);
+$very-dark-violet: hsl(278, 68%, 11%);
+
+@mixin gradient-background-1{
+    background: linear-gradient(
+    $linear-gradient-start,
+    $linear-gradient-end);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+
+.card-container{
+    position: absolute;
+    border-radius: 20px;
+    width: 400px;
+    height: 250px;
+    color: white;
+
+    left: -280px;
+    top: 100px;
+
+    img{
+        z-index: 1;
+    }
+
+    .card-content-container{
+        position: relative;
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        padding: 0 40px;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+
+    .card-logo-container{
+        position: relative;
+        z-index: 10;
+    }
+
+    .number-text{
+      font-size: 28px;
+      width: 100%;
+      text-align: left;
+    }
+    .name-and-exp-date-container{
+        font-size: 20px;
+        width: 90%;
+        color: white;
+        
+        display: flex;
+        justify-content: space-between;
+    }
+
+   
+}
+
+
+

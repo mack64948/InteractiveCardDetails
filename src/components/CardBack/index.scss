@@ -1,0 +1,45 @@
+$font-size: 18px;
+$linear-gradient-start: hsl(249, 99%, 64%);
+$linear-gradient-end: hsl(278, 94%, 30%);
+$error-red: hsl(0, 100%, 66%);
+$white: hsl(0, 0%, 100%);
+$light-grayish-violet: hsl(270, 3%, 87%);
+$dark-grayish-violet: hsl(279, 6%, 55%);
+$very-dark-violet: hsl(278, 68%, 11%);
+
+@mixin gradient-background-1{
+    background: linear-gradient(
+    $linear-gradient-start,
+    $linear-gradient-end);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+
+.card-back-container{
+    position: absolute;
+    border-radius: 20px;
+    width: 400px;
+    height: 250px;
+    color: white;
+
+    left: -140px;
+    top: 390px;
+
+    .cvc-text{
+        position: relative;
+        z-index: 11;
+        font-weight: 900;
+        color: white;
+        left: 35%;
+        top: 45%;
+
+    }
+
+}
+
