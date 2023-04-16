@@ -1,5 +1,5 @@
 
-import './App.css';
+import './App.scss';
 import { useState } from 'react';
 
 import { CardFront } from './components/CardFront';
@@ -35,7 +35,7 @@ function App() {
 
   return (
     <div className="App">
-      <img style={bgImageStyle} src={bgImageDesktop} />
+      <img class="bg-image" style={bgImageStyle} src={bgImageDesktop} alt="background image" />
       <main style={mainStyle}>
         <CardFront number={cardNumber} expDate={`${expMonth}/${expYear}`} name={name}></CardFront>
         <CardBack cvc={cvc}></CardBack>

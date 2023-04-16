@@ -43,3 +43,12 @@ $very-dark-violet: hsl(278, 68%, 11%);
 
 }
 
+
+@media all and (max-width: 600px){
+    .card-back-container{
+        
+        left: -150px;
+        width: 450px;
+     
+    }
+}

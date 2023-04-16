@@ -1,0 +1,54 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+
+  text-align: center;
+
+  img{
+
+  }
+
+  main{
+
+  }
+}
+
+
+@media all and (max-width: 600px){
+
+  .App{
+      height: 1000px;
+      width: 100%; 
+
+      .bg-image{
+        
+        display: none;
+      }
+
+      div{
+      
+      }
+
+      main{
+        
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+      
+        form{
+         
+          padding: 20px 0;
+          width: 500px;
+          left: -90px;
+          top: 300px;
+          position: relative;
+        }
+      }
+  }
+}
